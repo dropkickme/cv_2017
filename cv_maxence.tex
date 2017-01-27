@@ -1,0 +1,129 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage[utf8]{inputenc}
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.78]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Maxence}{Caron}
+%\title{Curriculum vitæ}                               % optional, remove / comment the line if not wanted
+\address{3831 rue Lefbvre}{Québec, Québec}{G1X 4H1}% optional, remove / comment the line if not wantedB; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(581)~989~8472}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{maxence\_caron@videotron.ca}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{maxencecaron}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Objectifs}
+\begin{itemize}
+\item Maximiser mon apprentissage en programmation, en informatique, et sur les sciences en général.
+\item Conceptualiser et réaliser des solutions à des problèmes courants en utilisant l’informatique.
+\item Travailler dans une équipe multidisciplinaire afin de mener à bien de plus gros projets professionnels.
+\end{itemize}
+
+\section{Compétences Personelles}
+\begin{itemize}
+\item Facilité à apprendre et à transposer mon apprentissage en pratique.
+\item Facilité à conceptualiser l’abstrait.
+\item Créativité et ingéniosité.
+\item Service à la clientèle.
+\end{itemize}
+
+\section{Compétences Linguistiques}
+Excellente maitrise de la langue française et anglaise
+
+\section{Compétences Techniques}
+{\bfseries Languages de programmation}
+\begin{itemize}\item Python \item C++ (en apprentissage)\end{itemize}
+\hfill\\
+{\bfseries Systèmes d'exploitation}
+\begin{itemize}\item Windows \item Linux \end{itemize}
+\hfill\\
+{\bfseries Logiciel de productivités}
+\begin{itemize}\item Word, Excel, PowerPoint\item Latex \item Git/Mercurial\end{itemize}
+
+\section {Projets Personnels}
+{\bfseries Projets en cours:}
+\begin{itemize}
+\item Utilisation d’un Raspberry Pie conjointement avec python pour amasser et analyser des données .html et .csv sur les marchés financiers via Yahoo
+\item Transformation d’un vieil ordinateur en routeur en utilisant pfSense
+\item Construction, débogage et réparation d’ordinateurs
+\end{itemize}
+\hfill\\
+{\bfseries Projets futurs}:
+\begin{itemize}
+\item Apprendre et utiliser le langage Java et Node.js
+\item Apprendre et utiliser des réseaux de neurones artificiels (Neural Network)
+\end{itemize}
+
+\section{Expérience Professionnelle}
+\cventry{2012--2016}{Conseiller à la vente et au service}{Canac}{376, avenue Taniata Lévis (Saint-Romuald)}{}{\begin{itemize}
+\item Répondre aux demandes de la clientèle
+\item Répondre aux demandes techniques de la clientèle
+\item Effectuer le suivi des inventaires au système
+\end{itemize}}
+
+\section {Formations}
+{\bfseries Université Laval \hfill 2016 – en cours}\\
+\textit {2325 Rue de l'Université, Ville de Québec}
+\begin{itemize} \item BAC en génie logiciel \end{itemize}
+\hfill\\
+{\bfseries St-Lawrence College \hfill 2014-2016}\\
+\textit {790, Nérée-Tremblay, Québec}
+\begin{itemize} \item DEC Science pure, concentration en physique \end{itemize}
+\hfill\\
+{\bfseries Séminaire des Pères Maristesl \hfill 2009-2014}\\
+\textit {2315 Chemin Saint-Louis, Ville de Québec}
+\begin{itemize} \item DES anglais langue seconde et langue maternelle \end{itemize}
+
+\section{Loisirs}
+\begin{itemize} 
+\item Jouer de la guitare électrique/acoustique
+\item Faire de l’Escalade
+\end{itemize}
+
+\end{document}
+
+
+%% end of file `template.tex'.
